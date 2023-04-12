@@ -44,7 +44,7 @@ loginButtonRef.addEventListener('click', (event) => {
                 response.json().then(
                     data => {
                         localStorage.setItem('authToken', data.jwt)
-                        window.location.href = '/ToDo_modelo/tarefas.html'
+                        window.location.href = 'https://gabrielcesar48.github.io/Checkpoint-II-ToDo/tarefas.html'
                     }   
                 )
             } else {
