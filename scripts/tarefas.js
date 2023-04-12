@@ -29,7 +29,7 @@ var checkValidation = false;
 // Função de logout 
 function logout() {
 // Redireciona para a página de login e limpa o token de autorização armazenado 
-window.location.href = '/ToDo_modelo/index.html';
+window.location.href = 'https://gabrielcesar48.github.io/Checkpoint-II-ToDo/index.html';
 localStorage.clear();
 }
 
@@ -68,7 +68,7 @@ if (authToken === null) {
 / Se não houver token de autorização, mostra um aviso e redireciona para a página de login /
 Swal.fire({
 icon: 'error',
-title: 'Oops...',
+title: 'Epa',
 text: 'Você não esta logado!'
 }).then((result) => {
 if (result.closed) {

@@ -26,13 +26,13 @@ var requestConfig = {
 
             alert('Você foi cadastrado com sucesso')
 
-            window.location.href = '/ToDo_modelo/index.html'
+            window.location.href = 'https://gabrielcesar48.github.io/Checkpoint-II-ToDo/index.html'
 
         } else {
 
             alert('O usuário ja foi cadastrado')
 
-            window.location.href = '/ToDo_modelo/index.html'
+            window.location.href = 'https://gabrielcesar48.github.io/Checkpoint-II-ToDo/index.html'
         }
     }
 )
