@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+
+  <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+  <link rel="stylesheet" href="styles/acesso.css">
+
+  <!-- ---------------------- lógica aplicada no registro -------------------- -->
+  <!-- <script src="/scripts/utils.js"></script>
+  <script src="/scripts/signup.js"></script> -->
+
+</head>
+
+<body>
+
+  <div class="left">
+    <img src="./assets/pessoa-signup.png" alt="">
+  </div>
+  <div class="right">
+    <form>
+      <div class="form-header">
+        <p>To-Do App</p>
+      </div>
+
+      <label id="inputFirstName">
+        Nome:
+        <input type="text" required title="Digite seu nome" class="valid__input" maxlength="20">
+        <div class="valid__fist_name">
+          <small class="valid__notice">Por favor, insira um nome válido com no mínimo 4 letras.</small>
+        </div>
+      </label>
+
+      <label id="inputLastName">
+        Sobrenome:
+        <input type="text" required title="Digite seu sobrenome" class="valid__input" maxlength="50">
+        <div class="valid__last_name">
+          <small class="valid__notice">Por favor, digite seu sobrenome</small>
+        </div>
+      </label>
+
+      <label id="inputEmail">
+        Email:
+        <input type="email" required title="Digite seu email" class="valid__input">
+        <div class="valid__email">
+          <small class="valid__notice">Digite um email válido.</small>
+        </div>
+      </label>
+
+      <label id="inputPassword">
+        Senha:
+        <input type="password" required title="Digite sua senha" class="valid__input">
+        <div class="valid__senha">
+          <small class="valid__notice">A senha deve conter entre 8 a 20 caracteres, números e letra maiúscula.</small>
+        </div>
+
+      </label>
+
+      <label id="inputValidPassword">
+        Repetir senha:
+        <input type="password" required title="Repita sua senha" class="valid__input">
+        <div class="valid__rep_senha">
+          <small class="valid__notice">As senhas devem ser iguais.</small>
+        </div>
+      </label>
+
+      <button type="submit" disabled id="btnRegister">Criar conta</button>
+
+    </form>
+    <div class="ingressar">
+      <a href="index.html">Já possui conta? Acesse aqui</a>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="./scripts/validFieldsRegister.js"></script>
+  <script src="./scripts/register.js"></script>
+</body>
+
+</html>

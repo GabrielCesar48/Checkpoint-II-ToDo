@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+
+  <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+  <link rel="stylesheet" href="styles/acesso.css">
+
+  <!-- ---------------------- lógica aplicada no login ----------------------- -->
+  <!-- <script src="/scripts/utils.js"></script>
+  <script src="/scripts/index.js"></script> -->
+
+</head>
+
+<body>
+
+  <div class="left">
+    <img src="./assets/pessoa-login.png" alt="">
+  </div>
+
+  <div class="right">
+    <form>
+      <div class="form-header">
+        <p>To-Do App</p>
+      </div>
+
+      <h1>Acessar</h1>
+
+      <label id="inputEmail">
+        Email:
+        <input class="valid__input" id="validEmail" type="email" required title="Preenchimento obrigatório.">
+        <div class="valid__email">
+          <small class="valid__notice">Digite um email válido!</small>
+        </div>
+      </label>
+
+      <label id="inputPassword">
+        Senha:
+        <input class="valid__input" id="validPassword" type="password" required title="Preenchimento obrigatório.">
+        <div class="valid__senha">
+          <small class="valid__notice">Senha inválida!</small>
+        </div>
+      </label>
+
+      <button type="submit" disabled id="btnLogin">Acessar</button>
+    </form>
+
+    <div class="ingressar">
+      <a href="signup.html">Não possui conta? Crie agora mesmo</a>
+    </div>
+  </div>
+
+
+
+  <script src="./scripts/validFieldsLogin.js"></script>
+  <script src="./scripts/login.js"></script>
+
+
+
+</body>
+
+</html>

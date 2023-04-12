@@ -1,0 +1,43 @@
+*EXPLICAÇÕES E REQUISITOS DO CHECK 2*
+
+
+*API*
+A documentação da API pode ser acessada pelo seguinte link: https://todo-api.ctd.academy/
+A URL Base para a API é: https://todo-api.ctd.academy/v1/
+Todos end-points que existem nela só são acessíveis caso a Requisição possua os Headers "Accept" e "Content-Type", ambos com o valor "application/json".
+Já os end-points privados irão precisar de um Header adicional (além dos outros dois citados anteriormente) chamado "Authorization", que terá como valor o JWT obtido do resultado de sucesso na Request de Login .
+
+
+*CADASTRO*
+Será a tela que o usuário irá cadastrar uma nova conta na Aplicação, ela possuí um formulário que ao ser submetido será feita uma comunicação da API.
+
+*- Formuláruo*
+Nome: É obrigatório, precisa ter no mínimo 4 caracteres e no máximo 20.
+Sobrenome: É obrigatório e precisa ter no mínimo 6 caracteres e no máximo 50.
+Email: É obrigatório, precisa ter no mínimo 6 caracteres e precisa ser um e-mail válido.
+Senha: É obrigatório e precisa ter no mínimo 8 caracteres.
+Repetir Senha: Precisa ser exatamente a mesma coisa digitada no campo Senha.
+Botão: Irá começar desabilitado e será habilitado assim que o usuário preencher todos os campos corretamente.
+
+*Fluxo*
+- Usuário preenche o formulário corretamente
+- Clicka no botão de Cadastro
+- Aplicação dispara uma request para a API com os dados que ele preencher
+- Caso esteja tudo certo a API irá retornar sucesso
+- Aplicação redireciona o usuário para o Login
+
+
+*LOGIN*
+Será a primeira tela que o usuário irá ver da Aplicação, ela possuí um formulário que ao ser submetido será feita uma comunicação da API.
+
+*- Formuláruo*
+Email: É obrigatório, precisa ter no mínimo 6 caracteres e precisa ser um e-mail válido.
+Senha: É obrigatório e precisa ter no mínimo 8 caracteres.
+Botão: Irá começar desabilitado e será habilitado assim que o usuário preencher todos os campos corretamente.
+
+*Fluxo*
+- Usuário preenche o formulário corretamente
+- Clicka no botão de Login
+- Aplicação dispara uma request para a API com os dados que ele preencher
+- Caso esteja tudo certo a API irá retornar o Token de autorização que é chamado de JWT
+- Após obter esse JWT a aplicação deverá armazenar o JWT no localStorage e redirecionar o Usuário para a pagina de Tarefas
