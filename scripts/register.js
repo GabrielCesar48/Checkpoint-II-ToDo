@@ -1,10 +1,12 @@
+
+
 btnCadastroRef.addEventListener('click', () => {
 
 var userData = {
         firstName:  inputFirstNameRef.value,
         lastName:   inputLastNameRef.value,
         email:      inputEmailRef.value,
-        password:   inputValidPasswordRef   
+        password:   inputValidPasswordRef.value   
 }
 
 const requestHeaders = {
